@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/marqueList"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:clipToPadding="false"
+        android:visibility="visible"
+        />
+
+    <com.anandgaur.autoscrollrecyclerview.ScrollTextView
+        android:id="@+id/tvContent"
+        android:layout_width="250dp"
+        android:layout_height="80dp"
+        android:ellipsize="marquee"
+        android:marqueeRepeatLimit="marquee_forever"
+        android:maxLines="3"
+        android:scrollHorizontally="false"
+        android:scrollbars="vertical"
+        android:text="Hii How are you guys this is auto scroll text how it move "
+        android:textAlignment="inherit"
+        android:textColor="@android:color/black"
+        android:textSize="12dp" />
+
+    <Button
+        android:id="@+id/btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="increase" />
+
+</LinearLayout>
